@@ -9,8 +9,32 @@
 
 class Fragments {
 
+public:
+
+    /**
+     * 动态申请二维数组内存
+     * @tparam T
+     * @param pT
+     * @param numRows
+     * @param numColumns
+     */
     template <class T>
-    static void make2DArray(T **&pT, int numRows, int numColumns);
+    static void new2DArray(T **&pT, int numRows, int numColumns);
+
+    /**
+     * 删除二维数组
+     * @tparam T
+     * @param pT
+     * @param numRows
+     * @param numColumns
+     */
+    template <class T>
+    static void delete2DArray(T **&pT, int numRows, int numColumns);
+
+    static void test2DArray();
+    template <class T>
+    static void dump2DArray(T **&pT, int numRows, int numColumns);
+
 
 
 };

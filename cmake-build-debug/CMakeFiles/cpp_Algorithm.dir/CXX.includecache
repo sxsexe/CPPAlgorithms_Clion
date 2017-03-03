@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lxd/code/cpp_Algorithm/fragments/Fragments.cpp
+Fragments.h
+/Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+iostream
+-
+
+/Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+
+/Users/lxd/code/cpp_Algorithm/main.cpp
+iostream
+-
+fragments/Fragments.h
+/Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+
