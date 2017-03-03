@@ -6,9 +6,9 @@ int main() {
 
     Fragments::test2DArray();
 
+    Fragments::test2DArray1();
 
 
-
-    std::cout << "Hello, World!" << std::endl;
+//    std::cout << "Hello, World!" << std::endl;
     return 0;
 }

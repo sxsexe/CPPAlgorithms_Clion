@@ -35,6 +35,27 @@ public:
     template <class T>
     static void dump2DArray(T **&pT, int numRows, int numColumns);
 
+    /**
+     * 创建一个二维数组
+     * @tparam T
+     * @param pT
+     * @param numRows 行数
+     * @param rowSize 列数是有一维数组rowSize指定，第i行的列数是rowSize[i]
+     */
+    template <class T>
+    static void new2DArray1(T **&pT, int numRows, int *rowSize);
+
+    /**
+     * 删除二维数组
+     * @tparam T
+     * @param pT
+     * @param numRows
+     * @param rowSize
+     */
+    template <class T>
+    static void delete2DArray1(T **&pT, int numRows, int *rowSize);
+
+    static void test2DArray1();
 
 
 };

@@ -26,9 +26,9 @@ template<class T>
 void Fragments::delete2DArray(T **&pT, int numRows, int numColumns) {
     if (pT) {
         for (int i = 0; i < numRows; i++) {
-            delete[]pT[i];
+            delete[] pT[i];
         }
-        delete[]pT;
+        delete[] pT;
         pT = nullptr;
     }
 
@@ -39,7 +39,7 @@ void Fragments::dump2DArray(T **&pT, int numRows, int numColumns) {
     if (pT) {
         for (int i = 0; i < numRows; i++) {
             for (int j = 0; j < numColumns; j++) {
-               cout << "   " << pT[i][j];
+                cout << "   " << pT[i][j];
             }
             cout << endl;
         }
@@ -50,7 +50,10 @@ void Fragments::dump2DArray(T **&pT, int numRows, int numColumns) {
 void Fragments::test2DArray() {
 
     int **p;
-    int numRows = 3, numColumns = 3;
+    int numRows = 6, numColumns = 6;
+
+    cout << "########### test2DArray Start ###########" << endl;
+    cout << "rows = " << numRows << ", columns = " << numColumns << endl;
 
     new2DArray(p, numRows, numColumns);
     for (int i = 0; i < numRows; i++) {
@@ -62,4 +65,66 @@ void Fragments::test2DArray() {
     dump2DArray(p, numRows, numColumns);
 
     delete2DArray(p, numRows, numColumns);
+
+    cout << "########### test2DArray End ###########" << endl;
 }
+
+template<class T>
+void Fragments::new2DArray1(T **&pT, int numRows, int *rowSize) {
+
+
+    try {
+        pT = new T *[numRows];
+        for (int i = 0; i < numRows; i++) {
+            int numColumns = rowSize[i];
+            pT[i] = new T[numColumns];
+        }
+    } catch (bad_alloc) {
+        throw "new2DArray1:Failed to allocate memory";
+    }
+
+}
+
+template<class T>
+void Fragments::delete2DArray1(T **&pT, int numRows, int *rowSize) {
+
+    if (pT) {
+        for (int i = 0; i < numRows; i++) {
+            delete[] pT[i];
+        }
+        delete[] pT;
+    }
+}
+
+void Fragments::test2DArray1() {
+
+    double **p;
+    int numRows = 6;
+    int columnNums[6];
+
+
+    cout << "########### test2DArray1 Start ###########" << endl;
+    cout << " rows = " << numRows << endl;
+
+    for (int i = 0; i < numRows; i++) {
+        columnNums[i] = numRows + i;
+    }
+
+    new2DArray1(p, numRows, columnNums);
+
+    for (int i = 0; i < numRows; i++) {
+        for (int j = 0; j < columnNums[i]; j++) {
+            p[i][j] = (char)(i + j + 49);
+            cout << "    " << p[i][j];
+        }
+        cout << endl;
+    }
+
+    delete2DArray1(p, numRows, columnNums);
+    cout << "########### test2DArray1 End ###########" << endl;
+
+}
+
+
+
+
