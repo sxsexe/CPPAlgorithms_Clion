@@ -8,6 +8,8 @@ int main() {
 
     Fragments::test2DArray1();
 
+    Fragments::testChangeLength1D();
+
 
 //    std::cout << "Hello, World!" << std::endl;
     return 0;

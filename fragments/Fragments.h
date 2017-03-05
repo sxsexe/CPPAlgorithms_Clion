@@ -58,6 +58,19 @@ public:
     static void test2DArray1();
 
 
+    /**
+     * 更改一维数组长度，释放掉原来的数组
+     * @tparam T
+     * @param p
+     * @param oldLength
+     * @param newLength
+     */
+    template <class T>
+    static T * changeLength1D(T * &p, int oldLength, int newLength);
+
+    static void testChangeLength1D();
+
+
 };
 
 

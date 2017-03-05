@@ -114,7 +114,7 @@ void Fragments::test2DArray1() {
 
     for (int i = 0; i < numRows; i++) {
         for (int j = 0; j < columnNums[i]; j++) {
-            p[i][j] = (char)(i + j + 49);
+            p[i][j] = (char) (i + j + 49);
             cout << "    " << p[i][j];
         }
         cout << endl;
@@ -122,6 +122,63 @@ void Fragments::test2DArray1() {
 
     delete2DArray1(p, numRows, columnNums);
     cout << "########### test2DArray1 End ###########" << endl;
+
+}
+
+template<class T>
+T *Fragments::changeLength1D(T *&p, int oldLength, int newLength) {
+
+    if (!p) {
+        return nullptr;
+    }
+
+    if (newLength == oldLength) {
+        return p;
+    }
+
+    if (newLength < oldLength) {
+        p[newLength] = '\0';
+        return p;
+    }
+
+    if (newLength > oldLength) {
+        T *tmpPt = new T[newLength];
+        //memset(tmpPt, 0, newLength);
+        if (tmpPt) {
+            // 第三个参数是oldLength * sizeof(T)
+            memcpy(tmpPt, p, oldLength * sizeof(T));
+            cout << "DEBUG tmpPt[3]=" << tmpPt[3] << endl;
+            // 第三个参数是(newLength - oldLength) * sizeof(T)
+            memset(tmpPt + oldLength, 0, (newLength - oldLength) * sizeof(T));
+            return tmpPt;
+
+        } else {
+            std::cout << "Fail to new " << std::endl;
+            return nullptr;
+        }
+    }
+}
+
+void Fragments::testChangeLength1D() {
+    int newLength = 20, oldLength = 5;
+
+    cout << "########### testChangeLength1D Start ###########" << endl;
+    cout << "newLength=" << newLength << ",oldLength=" << oldLength << endl;
+
+    int *a = new int[oldLength];
+    for (int i = 0; i < oldLength; i++) {
+        a[i] = i + 1;
+    }
+
+    int *newPt = changeLength1D(a, oldLength, newLength);
+
+    for (int i = 0; i < newLength; i++) {
+        cout << " " << newPt[i] << ",";
+    }
+    cout << endl;
+    delete[]a;
+    delete[]newPt;
+    cout << "########### testChangeLength1D End ###########" << endl;
 
 }
 
