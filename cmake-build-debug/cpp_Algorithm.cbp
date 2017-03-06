@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.cpp">
+			<Option target="cpp_Algorithm"/>
+		</Unit>
+		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h">
+			<Option target="cpp_Algorithm"/>
+		</Unit>
 		<Unit filename="/Users/lxd/code/cpp_Algorithm/fragments/Fragments.cpp">
 			<Option target="cpp_Algorithm"/>
 		</Unit>

@@ -123,6 +123,33 @@ cpp_Algorithm/fast:
 	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/build
 .PHONY : cpp_Algorithm/fast
 
+CPPPrimer/StringTest.o: CPPPrimer/StringTest.cpp.o
+
+.PHONY : CPPPrimer/StringTest.o
+
+# target to build an object file
+CPPPrimer/StringTest.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o
+.PHONY : CPPPrimer/StringTest.cpp.o
+
+CPPPrimer/StringTest.i: CPPPrimer/StringTest.cpp.i
+
+.PHONY : CPPPrimer/StringTest.i
+
+# target to preprocess a source file
+CPPPrimer/StringTest.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.i
+.PHONY : CPPPrimer/StringTest.cpp.i
+
+CPPPrimer/StringTest.s: CPPPrimer/StringTest.cpp.s
+
+.PHONY : CPPPrimer/StringTest.s
+
+# target to generate assembly for a file
+CPPPrimer/StringTest.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.s
+.PHONY : CPPPrimer/StringTest.cpp.s
+
 fragments/Fragments.o: fragments/Fragments.cpp.o
 
 .PHONY : fragments/Fragments.o
@@ -186,6 +213,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_Algorithm"
+	@echo "... CPPPrimer/StringTest.o"
+	@echo "... CPPPrimer/StringTest.i"
+	@echo "... CPPPrimer/StringTest.s"
 	@echo "... fragments/Fragments.o"
 	@echo "... fragments/Fragments.i"
 	@echo "... fragments/Fragments.s"

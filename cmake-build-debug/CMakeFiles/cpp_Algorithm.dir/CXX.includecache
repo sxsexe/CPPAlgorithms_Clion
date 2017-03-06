@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.cpp
+StringTest.h
+/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h
+iostream
+-
+
+/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h
+iostream
+-
+
 /Users/lxd/code/cpp_Algorithm/fragments/Fragments.cpp
 Fragments.h
 /Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
@@ -19,4 +29,6 @@ iostream
 -
 fragments/Fragments.h
 /Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+CPPPrimer/StringTest.h
+/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h
 

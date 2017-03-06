@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o"
   "/Users/lxd/code/cpp_Algorithm/fragments/Fragments.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Fragments.cpp.o"
   "/Users/lxd/code/cpp_Algorithm/main.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/main.cpp.o"
   )
