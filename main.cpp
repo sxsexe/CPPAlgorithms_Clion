@@ -2,6 +2,12 @@
 
 #include "fragments/Fragments.h"
 #include "CPPPrimer/StringTest.h"
+#include "CPPPrimer/ArrayTest.h"
+
+
+//std::string sa[10];
+//int ia[10];
+using namespace std;
 
 int main() {
 
@@ -17,7 +23,17 @@ int main() {
 
 //    StringTest::testReplaceCharWith();
 
-    StringTest::testRemoveAllPunct();
+//    StringTest::testRemoveAllPunct();
+
+//    std::string sa2[10];
+//    int ia2[10];
+//    //sa2中是空字符串 ia2中为0
+//    cout << sa2[2] << "," << ia2[2] << endl;
+
+//    ArrayTest::test1();
+
+
+    Fragments::testIntance();
 
 //    std::cout << "Hello, World!" << std::endl;
     return 0;

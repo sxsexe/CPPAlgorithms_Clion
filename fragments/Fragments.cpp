@@ -3,6 +3,8 @@
 //
 
 #include "Fragments.h"
+#include "Child.h"
+#include "Parent.h"
 
 #include <iostream>
 
@@ -180,6 +182,12 @@ void Fragments::testChangeLength1D() {
     delete[]newPt;
     cout << "########### testChangeLength1D End ###########" << endl;
 
+}
+
+void Fragments::testIntance() {
+
+    Parent* p = Child::getInstance();
+    p->releas();
 }
 
 

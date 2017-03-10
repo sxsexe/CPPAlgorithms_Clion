@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.cpp
+ArrayTest.h
+/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.h
+iostream
+-
+stdlib.h
+-
+cstddef
+-
+
+/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.h
+
 /Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.cpp
 StringTest.h
 /Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h
@@ -16,13 +28,35 @@ iostream
 iostream
 -
 
+/Users/lxd/code/cpp_Algorithm/fragments/Child.cpp
+Child.h
+/Users/lxd/code/cpp_Algorithm/fragments/Child.h
+iostream
+-
+
+/Users/lxd/code/cpp_Algorithm/fragments/Child.h
+Parent.h
+/Users/lxd/code/cpp_Algorithm/fragments/Parent.h
+
 /Users/lxd/code/cpp_Algorithm/fragments/Fragments.cpp
 Fragments.h
 /Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+Child.h
+/Users/lxd/code/cpp_Algorithm/fragments/Child.h
+Parent.h
+/Users/lxd/code/cpp_Algorithm/fragments/Parent.h
 iostream
 -
 
 /Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+
+/Users/lxd/code/cpp_Algorithm/fragments/Parent.cpp
+Parent.h
+/Users/lxd/code/cpp_Algorithm/fragments/Parent.h
+iostream
+-
+
+/Users/lxd/code/cpp_Algorithm/fragments/Parent.h
 
 /Users/lxd/code/cpp_Algorithm/main.cpp
 iostream
@@ -31,4 +65,6 @@ fragments/Fragments.h
 /Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
 CPPPrimer/StringTest.h
 /Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h
+CPPPrimer/ArrayTest.h
+/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.h
 

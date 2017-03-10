@@ -70,6 +70,8 @@ public:
 
     static void testChangeLength1D();
 
+    static void testIntance();
+
 
 };
 

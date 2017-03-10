@@ -2,6 +2,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Algorithm.dir/main.cpp.o"
   "CMakeFiles/cpp_Algorithm.dir/fragments/Fragments.cpp.o"
   "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o"
+  "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o"
+  "CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o"
+  "CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o"
   "cpp_Algorithm.pdb"
   "cpp_Algorithm"
 )

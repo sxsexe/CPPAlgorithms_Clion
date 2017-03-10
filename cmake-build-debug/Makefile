@@ -123,6 +123,33 @@ cpp_Algorithm/fast:
 	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/build
 .PHONY : cpp_Algorithm/fast
 
+CPPPrimer/ArrayTest.o: CPPPrimer/ArrayTest.cpp.o
+
+.PHONY : CPPPrimer/ArrayTest.o
+
+# target to build an object file
+CPPPrimer/ArrayTest.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o
+.PHONY : CPPPrimer/ArrayTest.cpp.o
+
+CPPPrimer/ArrayTest.i: CPPPrimer/ArrayTest.cpp.i
+
+.PHONY : CPPPrimer/ArrayTest.i
+
+# target to preprocess a source file
+CPPPrimer/ArrayTest.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.i
+.PHONY : CPPPrimer/ArrayTest.cpp.i
+
+CPPPrimer/ArrayTest.s: CPPPrimer/ArrayTest.cpp.s
+
+.PHONY : CPPPrimer/ArrayTest.s
+
+# target to generate assembly for a file
+CPPPrimer/ArrayTest.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.s
+.PHONY : CPPPrimer/ArrayTest.cpp.s
+
 CPPPrimer/StringTest.o: CPPPrimer/StringTest.cpp.o
 
 .PHONY : CPPPrimer/StringTest.o
@@ -150,6 +177,33 @@ CPPPrimer/StringTest.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.s
 .PHONY : CPPPrimer/StringTest.cpp.s
 
+fragments/Child.o: fragments/Child.cpp.o
+
+.PHONY : fragments/Child.o
+
+# target to build an object file
+fragments/Child.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o
+.PHONY : fragments/Child.cpp.o
+
+fragments/Child.i: fragments/Child.cpp.i
+
+.PHONY : fragments/Child.i
+
+# target to preprocess a source file
+fragments/Child.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.i
+.PHONY : fragments/Child.cpp.i
+
+fragments/Child.s: fragments/Child.cpp.s
+
+.PHONY : fragments/Child.s
+
+# target to generate assembly for a file
+fragments/Child.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.s
+.PHONY : fragments/Child.cpp.s
+
 fragments/Fragments.o: fragments/Fragments.cpp.o
 
 .PHONY : fragments/Fragments.o
@@ -176,6 +230,33 @@ fragments/Fragments.s: fragments/Fragments.cpp.s
 fragments/Fragments.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/fragments/Fragments.cpp.s
 .PHONY : fragments/Fragments.cpp.s
+
+fragments/Parent.o: fragments/Parent.cpp.o
+
+.PHONY : fragments/Parent.o
+
+# target to build an object file
+fragments/Parent.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o
+.PHONY : fragments/Parent.cpp.o
+
+fragments/Parent.i: fragments/Parent.cpp.i
+
+.PHONY : fragments/Parent.i
+
+# target to preprocess a source file
+fragments/Parent.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.i
+.PHONY : fragments/Parent.cpp.i
+
+fragments/Parent.s: fragments/Parent.cpp.s
+
+.PHONY : fragments/Parent.s
+
+# target to generate assembly for a file
+fragments/Parent.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.s
+.PHONY : fragments/Parent.cpp.s
 
 main.o: main.cpp.o
 
@@ -213,12 +294,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_Algorithm"
+	@echo "... CPPPrimer/ArrayTest.o"
+	@echo "... CPPPrimer/ArrayTest.i"
+	@echo "... CPPPrimer/ArrayTest.s"
 	@echo "... CPPPrimer/StringTest.o"
 	@echo "... CPPPrimer/StringTest.i"
 	@echo "... CPPPrimer/StringTest.s"
+	@echo "... fragments/Child.o"
+	@echo "... fragments/Child.i"
+	@echo "... fragments/Child.s"
 	@echo "... fragments/Fragments.o"
 	@echo "... fragments/Fragments.i"
 	@echo "... fragments/Fragments.s"
+	@echo "... fragments/Parent.o"
+	@echo "... fragments/Parent.i"
+	@echo "... fragments/Parent.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
