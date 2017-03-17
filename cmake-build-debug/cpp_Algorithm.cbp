@@ -88,6 +88,24 @@
 		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.h">
 			<Option target="cpp_Algorithm"/>
 		</Unit>
+		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.cpp">
+			<Option target="cpp_Algorithm"/>
+		</Unit>
+		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.h">
+			<Option target="cpp_Algorithm"/>
+		</Unit>
+		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.cpp">
+			<Option target="cpp_Algorithm"/>
+		</Unit>
+		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.h">
+			<Option target="cpp_Algorithm"/>
+		</Unit>
+		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.cpp">
+			<Option target="cpp_Algorithm"/>
+		</Unit>
+		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.h">
+			<Option target="cpp_Algorithm"/>
+		</Unit>
 		<Unit filename="/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.cpp">
 			<Option target="cpp_Algorithm"/>
 		</Unit>

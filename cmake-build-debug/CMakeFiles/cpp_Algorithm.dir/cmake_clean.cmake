@@ -5,6 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o"
   "CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o"
   "CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o"
+  "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o"
+  "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o"
+  "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o"
   "cpp_Algorithm.pdb"
   "cpp_Algorithm"
 )

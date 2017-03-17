@@ -12,13 +12,18 @@ Child::Child() {
     cout << "new Child" << endl;
 }
 
+Child::Child(int num) {
+    cout << "new Child num=" << num << endl;
+}
+
 Child::~Child() {
     cout << "~Child" << endl;
 }
 
 void Child::releas() {
-    cout << "Child releas" << endl;
-    //Parent::releas();显式调用父类的方法，相当于super.xxx()
+    this->a = 200;
+    cout << "Child releas a=" << &a << endl;
+    Parent::releas();//显式调用父类的方法，相当于super.xxx()
     delete sIntance;
     sIntance = nullptr;
 }

@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o"
+  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o"
+  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o"
+  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o"
   "/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o"
   "/Users/lxd/code/cpp_Algorithm/fragments/Child.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o"
   "/Users/lxd/code/cpp_Algorithm/fragments/Fragments.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Fragments.cpp.o"

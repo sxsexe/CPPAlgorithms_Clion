@@ -14,6 +14,8 @@ public:
 
     virtual void releas();
 
+    int a = 100;
+
 };
 
 

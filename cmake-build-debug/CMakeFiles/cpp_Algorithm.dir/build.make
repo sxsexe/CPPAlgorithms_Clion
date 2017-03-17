@@ -201,6 +201,78 @@ CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o.provides: CMakeFiles/cpp_Alg
 CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o.provides.build: CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o
 
 
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o: CMakeFiles/cpp_Algorithm.dir/flags.make
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o: ../CPPPrimer/Screen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o -c /Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.cpp
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.cpp > CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.i
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.cpp -o CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.s
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o.requires
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o.provides: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o.provides
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o.provides.build: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o
+
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o: CMakeFiles/cpp_Algorithm.dir/flags.make
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o: ../CPPPrimer/CPPAlgorithmTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o -c /Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.cpp
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.cpp > CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.i
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.cpp -o CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.s
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o.requires
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o.provides: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o.provides
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o.provides.build: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o
+
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o: CMakeFiles/cpp_Algorithm.dir/flags.make
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o: ../CPPPrimer/PointerTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o -c /Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.cpp
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.cpp > CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.i
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.cpp -o CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.s
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o.requires
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o.provides: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o.provides
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o.provides.build: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o
+
+
 # Object files for target cpp_Algorithm
 cpp_Algorithm_OBJECTS = \
 "CMakeFiles/cpp_Algorithm.dir/main.cpp.o" \
@@ -208,7 +280,10 @@ cpp_Algorithm_OBJECTS = \
 "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o" \
 "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o" \
 "CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o" \
-"CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o"
+"CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o" \
+"CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o" \
+"CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o" \
+"CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o"
 
 # External object files for target cpp_Algorithm
 cpp_Algorithm_EXTERNAL_OBJECTS =
@@ -219,9 +294,12 @@ cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o
 cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o
 cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o
 cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o
+cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o
+cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o
+cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o
 cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/build.make
 cpp_Algorithm: CMakeFiles/cpp_Algorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable cpp_Algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable cpp_Algorithm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_Algorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -235,6 +313,9 @@ CMakeFiles/cpp_Algorithm.dir/requires: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/St
 CMakeFiles/cpp_Algorithm.dir/requires: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o.requires
 CMakeFiles/cpp_Algorithm.dir/requires: CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o.requires
 CMakeFiles/cpp_Algorithm.dir/requires: CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o.requires
+CMakeFiles/cpp_Algorithm.dir/requires: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o.requires
+CMakeFiles/cpp_Algorithm.dir/requires: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o.requires
+CMakeFiles/cpp_Algorithm.dir/requires: CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o.requires
 
 .PHONY : CMakeFiles/cpp_Algorithm.dir/requires
 

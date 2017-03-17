@@ -23,5 +23,5 @@ Parent::~Parent() {
 }
 
 void Parent::releas() {
-    cout << "Parent release" << endl;
+    cout << "Parent release a=" << &a << endl;
 }

@@ -4,6 +4,9 @@
 #include "CPPPrimer/StringTest.h"
 #include "CPPPrimer/ArrayTest.h"
 
+#include "CPPPrimer/CPPAlgorithmTest.h"
+#include "CPPPrimer/PointerTest.h"
+
 
 //std::string sa[10];
 //int ia[10];
@@ -33,7 +36,12 @@ int main() {
 //    ArrayTest::test1();
 
 
-    Fragments::testIntance();
+//    Fragments::testIntance();
+
+//    CPPAlgorithmTest::testAccumulate();
+
+    PointerTest::testPointer();
+
 
 //    std::cout << "Hello, World!" << std::endl;
     return 0;

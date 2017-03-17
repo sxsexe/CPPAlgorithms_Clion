@@ -184,10 +184,21 @@ void Fragments::testChangeLength1D() {
 
 }
 
+/**
+ * test Child.cpp
+ */
 void Fragments::testIntance() {
 
     Parent* p = Child::getInstance();
     p->releas();
+
+    //如果Child(int num)声明为explicit的，以下代码不会隐式转换，会报错
+    //no viable conversion from 'int' to 'Child'
+    Child c = 10;
+
+//    Child cc;
+
+
 }
 
 

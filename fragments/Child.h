@@ -12,9 +12,17 @@ class Child :public Parent{
 public:
     static Parent * getInstance();
     Child();
+    /**
+     *声明default后，强制编译器自动生成一个默认构造函数，不需要再自行定义；如果自行定义了会报错
+     * definition of explicitly defaulted default constructor
+     */
+    //Child() = default;
+
+    /*explicit*/ Child(int num);
+
     ~Child();
 
-    void releas();
+    void releas() override ;
 
 };
 

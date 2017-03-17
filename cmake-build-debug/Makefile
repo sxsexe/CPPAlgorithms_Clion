@@ -150,6 +150,87 @@ CPPPrimer/ArrayTest.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.s
 .PHONY : CPPPrimer/ArrayTest.cpp.s
 
+CPPPrimer/CPPAlgorithmTest.o: CPPPrimer/CPPAlgorithmTest.cpp.o
+
+.PHONY : CPPPrimer/CPPAlgorithmTest.o
+
+# target to build an object file
+CPPPrimer/CPPAlgorithmTest.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o
+.PHONY : CPPPrimer/CPPAlgorithmTest.cpp.o
+
+CPPPrimer/CPPAlgorithmTest.i: CPPPrimer/CPPAlgorithmTest.cpp.i
+
+.PHONY : CPPPrimer/CPPAlgorithmTest.i
+
+# target to preprocess a source file
+CPPPrimer/CPPAlgorithmTest.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.i
+.PHONY : CPPPrimer/CPPAlgorithmTest.cpp.i
+
+CPPPrimer/CPPAlgorithmTest.s: CPPPrimer/CPPAlgorithmTest.cpp.s
+
+.PHONY : CPPPrimer/CPPAlgorithmTest.s
+
+# target to generate assembly for a file
+CPPPrimer/CPPAlgorithmTest.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.s
+.PHONY : CPPPrimer/CPPAlgorithmTest.cpp.s
+
+CPPPrimer/PointerTest.o: CPPPrimer/PointerTest.cpp.o
+
+.PHONY : CPPPrimer/PointerTest.o
+
+# target to build an object file
+CPPPrimer/PointerTest.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o
+.PHONY : CPPPrimer/PointerTest.cpp.o
+
+CPPPrimer/PointerTest.i: CPPPrimer/PointerTest.cpp.i
+
+.PHONY : CPPPrimer/PointerTest.i
+
+# target to preprocess a source file
+CPPPrimer/PointerTest.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.i
+.PHONY : CPPPrimer/PointerTest.cpp.i
+
+CPPPrimer/PointerTest.s: CPPPrimer/PointerTest.cpp.s
+
+.PHONY : CPPPrimer/PointerTest.s
+
+# target to generate assembly for a file
+CPPPrimer/PointerTest.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.s
+.PHONY : CPPPrimer/PointerTest.cpp.s
+
+CPPPrimer/Screen.o: CPPPrimer/Screen.cpp.o
+
+.PHONY : CPPPrimer/Screen.o
+
+# target to build an object file
+CPPPrimer/Screen.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o
+.PHONY : CPPPrimer/Screen.cpp.o
+
+CPPPrimer/Screen.i: CPPPrimer/Screen.cpp.i
+
+.PHONY : CPPPrimer/Screen.i
+
+# target to preprocess a source file
+CPPPrimer/Screen.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.i
+.PHONY : CPPPrimer/Screen.cpp.i
+
+CPPPrimer/Screen.s: CPPPrimer/Screen.cpp.s
+
+.PHONY : CPPPrimer/Screen.s
+
+# target to generate assembly for a file
+CPPPrimer/Screen.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.s
+.PHONY : CPPPrimer/Screen.cpp.s
+
 CPPPrimer/StringTest.o: CPPPrimer/StringTest.cpp.o
 
 .PHONY : CPPPrimer/StringTest.o
@@ -297,6 +378,15 @@ help:
 	@echo "... CPPPrimer/ArrayTest.o"
 	@echo "... CPPPrimer/ArrayTest.i"
 	@echo "... CPPPrimer/ArrayTest.s"
+	@echo "... CPPPrimer/CPPAlgorithmTest.o"
+	@echo "... CPPPrimer/CPPAlgorithmTest.i"
+	@echo "... CPPPrimer/CPPAlgorithmTest.s"
+	@echo "... CPPPrimer/PointerTest.o"
+	@echo "... CPPPrimer/PointerTest.i"
+	@echo "... CPPPrimer/PointerTest.s"
+	@echo "... CPPPrimer/Screen.o"
+	@echo "... CPPPrimer/Screen.i"
+	@echo "... CPPPrimer/Screen.s"
 	@echo "... CPPPrimer/StringTest.o"
 	@echo "... CPPPrimer/StringTest.i"
 	@echo "... CPPPrimer/StringTest.s"
