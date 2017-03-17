@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o"
   "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o"
   "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o"
+  "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.o"
   "cpp_Algorithm.pdb"
   "cpp_Algorithm"
 )

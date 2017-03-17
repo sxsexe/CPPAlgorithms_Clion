@@ -15,7 +15,7 @@ void PointerTest::testPointer() {
     std::shared_ptr<string> p1;
     cout << "p1->empty=" << p1 << endl;
 
-    if(p1 && p1->empty()) {
+    if (p1 && p1->empty()) {
         *p1 = "Hi";
         cout << "*p1=" << *p1 << endl;
     }
@@ -45,7 +45,6 @@ void PointerTest::testPointer() {
     r = q;
     cout << "r=" << r << ",r.use_count=" << r.use_count() << endl;
     cout << "q=" << q << ",q.use_count=" << q.use_count() << endl;
-
 
 
     std::shared_ptr<Screen> pp = factroy_ptr();

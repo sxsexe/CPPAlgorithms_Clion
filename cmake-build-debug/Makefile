@@ -231,6 +231,33 @@ CPPPrimer/Screen.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.s
 .PHONY : CPPPrimer/Screen.cpp.s
 
+CPPPrimer/StrBlob.o: CPPPrimer/StrBlob.cpp.o
+
+.PHONY : CPPPrimer/StrBlob.o
+
+# target to build an object file
+CPPPrimer/StrBlob.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.o
+.PHONY : CPPPrimer/StrBlob.cpp.o
+
+CPPPrimer/StrBlob.i: CPPPrimer/StrBlob.cpp.i
+
+.PHONY : CPPPrimer/StrBlob.i
+
+# target to preprocess a source file
+CPPPrimer/StrBlob.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.i
+.PHONY : CPPPrimer/StrBlob.cpp.i
+
+CPPPrimer/StrBlob.s: CPPPrimer/StrBlob.cpp.s
+
+.PHONY : CPPPrimer/StrBlob.s
+
+# target to generate assembly for a file
+CPPPrimer/StrBlob.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_Algorithm.dir/build.make CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.s
+.PHONY : CPPPrimer/StrBlob.cpp.s
+
 CPPPrimer/StringTest.o: CPPPrimer/StringTest.cpp.o
 
 .PHONY : CPPPrimer/StringTest.o
@@ -387,6 +414,9 @@ help:
 	@echo "... CPPPrimer/Screen.o"
 	@echo "... CPPPrimer/Screen.i"
 	@echo "... CPPPrimer/Screen.s"
+	@echo "... CPPPrimer/StrBlob.o"
+	@echo "... CPPPrimer/StrBlob.i"
+	@echo "... CPPPrimer/StrBlob.s"
 	@echo "... CPPPrimer/StringTest.o"
 	@echo "... CPPPrimer/StringTest.i"
 	@echo "... CPPPrimer/StringTest.s"
