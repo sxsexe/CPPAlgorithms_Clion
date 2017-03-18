@@ -40,8 +40,8 @@ int main() {
 
 //    CPPAlgorithmTest::testAccumulate();
 
-    PointerTest::testPointer();
-
+//    PointerTest::testPointer();
+    PointerTest::testStrBlob();
 
 //    std::cout << "Hello, World!" << std::endl;
     return 0;

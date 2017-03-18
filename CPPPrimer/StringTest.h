@@ -6,6 +6,7 @@
 #define CPP_ALGORITHM_STRINGTEST_H
 
 #include <iostream>
+#include <string>
 
 class StringTest {
 

@@ -9,6 +9,23 @@
 using namespace std;
 
 
+void PointerTest::testStrBlob() {
+
+    StrBlob b1;
+    StrBlob b2 = {"a", "an", "the"};
+    b1 = b2;
+
+    b2.push_back("about");
+
+    b1.dumpData();
+
+    StrBlob *b = new StrBlob();
+    delete b;
+
+    cout << "testStrBlob over" << endl;
+
+}
+
 void PointerTest::testPointer() {
 
     //此时p1为空指针

@@ -10,8 +10,6 @@
 using namespace std;
 
 void ArrayTest::test1() {
-
-
     size_t t = 5;
 
     int a[5] = {2, 2, 2};

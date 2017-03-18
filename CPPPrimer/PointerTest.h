@@ -7,7 +7,9 @@
 
 #include "Screen.h"
 #include <iostream>
+#include <memory>
 
+#include "StrBlob.h"
 
 class PointerTest {
 
@@ -15,6 +17,7 @@ public:
 
     static void testPointer();
 
+    static void testStrBlob();
 
 private:
 

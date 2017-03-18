@@ -5,6 +5,9 @@
 #include "Screen.h"
 #include <iostream>
 
+Screen::Screen() {
+    std::cout << "new Screen()" << std::endl;
+}
 
 Screen::~Screen() {
 

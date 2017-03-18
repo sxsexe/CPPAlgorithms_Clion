@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/StrBlob.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/fragments/Child.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/fragments/Fragments.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Fragments.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/fragments/Parent.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o"
-  "/Users/lxd/code/cpp_Algorithm/main.cpp" "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/main.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/ArrayTest.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/ArrayTest.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/CPPAlgorithmTest.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/PointerTest.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/Screen.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StrBlob.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StringTest.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Child.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Child.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Fragments.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Fragments.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Parent.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/fragments/Parent.cpp.o"
+  "/cygdrive/e/code/CPPAlgorithms_Clion/main.cpp" "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/CMakeFiles/cpp_Algorithm.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

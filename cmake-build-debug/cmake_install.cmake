@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lxd/code/cpp_Algorithm
+# Install script for directory: /cygdrive/e/code/CPPAlgorithms_Clion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/lxd/code/cpp_Algorithm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/e/code/CPPAlgorithms_Clion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

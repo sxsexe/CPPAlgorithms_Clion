@@ -5,8 +5,10 @@
 #include "Fragments.h"
 #include "Child.h"
 #include "Parent.h"
+#include <stdlib.h>
 
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 

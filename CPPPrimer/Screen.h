@@ -13,7 +13,7 @@ class Screen {
 public:
     typedef std::string::size_type pos;
 
-    Screen() = default;
+    Screen();
 
     ~Screen();
 

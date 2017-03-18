@@ -10,9 +10,14 @@ CMakeFiles/cpp_Algorithm.dir/CPPPrimer/CPPAlgorithmTest.cpp.o: ../CPPPrimer/CPPA
 CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o: ../CPPPrimer/PointerTest.cpp
 CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o: ../CPPPrimer/PointerTest.h
 CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o: ../CPPPrimer/Screen.h
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o: ../CPPPrimer/StrBlob.h
 
 CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o: ../CPPPrimer/Screen.cpp
 CMakeFiles/cpp_Algorithm.dir/CPPPrimer/Screen.cpp.o: ../CPPPrimer/Screen.h
+
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.o: ../CPPPrimer/Screen.h
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.o: ../CPPPrimer/StrBlob.cpp
+CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.o: ../CPPPrimer/StrBlob.h
 
 CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o: ../CPPPrimer/StringTest.cpp
 CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StringTest.cpp.o: ../CPPPrimer/StringTest.h
@@ -33,6 +38,7 @@ CMakeFiles/cpp_Algorithm.dir/main.cpp.o: ../CPPPrimer/ArrayTest.h
 CMakeFiles/cpp_Algorithm.dir/main.cpp.o: ../CPPPrimer/CPPAlgorithmTest.h
 CMakeFiles/cpp_Algorithm.dir/main.cpp.o: ../CPPPrimer/PointerTest.h
 CMakeFiles/cpp_Algorithm.dir/main.cpp.o: ../CPPPrimer/Screen.h
+CMakeFiles/cpp_Algorithm.dir/main.cpp.o: ../CPPPrimer/StrBlob.h
 CMakeFiles/cpp_Algorithm.dir/main.cpp.o: ../CPPPrimer/StringTest.h
 CMakeFiles/cpp_Algorithm.dir/main.cpp.o: ../fragments/Fragments.h
 CMakeFiles/cpp_Algorithm.dir/main.cpp.o: ../main.cpp

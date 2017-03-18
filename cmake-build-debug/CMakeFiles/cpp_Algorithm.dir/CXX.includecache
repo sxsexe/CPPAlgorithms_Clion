@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.cpp
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/ArrayTest.cpp
 ArrayTest.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/ArrayTest.h
 iostream
 -
 stdlib.h
@@ -16,11 +16,11 @@ stdlib.h
 cstddef
 -
 
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/ArrayTest.h
 
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.cpp
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/CPPAlgorithmTest.cpp
 CPPAlgorithmTest.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/CPPAlgorithmTest.h
 string
 -
 iostream
@@ -32,87 +32,117 @@ numeric
 stdlib.h
 -
 
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/CPPAlgorithmTest.h
 vector
 -
 algorithm
 -
 
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.cpp
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/PointerTest.cpp
 PointerTest.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/PointerTest.h
 memory
 -
 iostream
 -
 
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/PointerTest.h
 Screen.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/Screen.h
+iostream
+-
+memory
+-
+StrBlob.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StrBlob.h
+
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/Screen.cpp
+Screen.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/Screen.h
 iostream
 -
 
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.cpp
-Screen.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.h
-iostream
--
-
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/Screen.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/Screen.h
 string
 -
 
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.cpp
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StrBlob.cpp
+StrBlob.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StrBlob.h
+
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StrBlob.h
+iostream
+-
+vector
+-
+string
+-
+memory
+-
+Screen.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/Screen.h
+
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StringTest.cpp
 StringTest.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StringTest.h
 iostream
 -
-
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h
-iostream
+string
+-
+cstring
 -
 
-/Users/lxd/code/cpp_Algorithm/fragments/Child.cpp
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StringTest.h
+iostream
+-
+string
+-
+
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Child.cpp
 Child.h
-/Users/lxd/code/cpp_Algorithm/fragments/Child.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Child.h
 iostream
 -
 
-/Users/lxd/code/cpp_Algorithm/fragments/Child.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Child.h
 Parent.h
-/Users/lxd/code/cpp_Algorithm/fragments/Parent.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Parent.h
 
-/Users/lxd/code/cpp_Algorithm/fragments/Fragments.cpp
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Fragments.cpp
 Fragments.h
-/Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Fragments.h
 Child.h
-/Users/lxd/code/cpp_Algorithm/fragments/Child.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Child.h
 Parent.h
-/Users/lxd/code/cpp_Algorithm/fragments/Parent.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Parent.h
+stdlib.h
+-
+iostream
+-
+cstring
+-
+
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Fragments.h
+
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Parent.cpp
+Parent.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Parent.h
 iostream
 -
 
-/Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Parent.h
 
-/Users/lxd/code/cpp_Algorithm/fragments/Parent.cpp
-Parent.h
-/Users/lxd/code/cpp_Algorithm/fragments/Parent.h
-iostream
--
-
-/Users/lxd/code/cpp_Algorithm/fragments/Parent.h
-
-/Users/lxd/code/cpp_Algorithm/main.cpp
+/cygdrive/e/code/CPPAlgorithms_Clion/main.cpp
 iostream
 -
 fragments/Fragments.h
-/Users/lxd/code/cpp_Algorithm/fragments/Fragments.h
+/cygdrive/e/code/CPPAlgorithms_Clion/fragments/Fragments.h
 CPPPrimer/StringTest.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/StringTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/StringTest.h
 CPPPrimer/ArrayTest.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/ArrayTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/ArrayTest.h
 CPPPrimer/CPPAlgorithmTest.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/CPPAlgorithmTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/CPPAlgorithmTest.h
 CPPPrimer/PointerTest.h
-/Users/lxd/code/cpp_Algorithm/CPPPrimer/PointerTest.h
+/cygdrive/e/code/CPPAlgorithms_Clion/CPPPrimer/PointerTest.h
 

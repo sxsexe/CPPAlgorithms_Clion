@@ -10,7 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/PointerTest.cpp.o"
   "CMakeFiles/cpp_Algorithm.dir/CPPPrimer/StrBlob.cpp.o"
   "cpp_Algorithm.pdb"
-  "cpp_Algorithm"
+  "cpp_Algorithm.exe"
+  "libcpp_Algorithm.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
