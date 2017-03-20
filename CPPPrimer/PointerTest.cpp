@@ -24,6 +24,9 @@ void PointerTest::testStrBlob() {
 
     cout << "testStrBlob over" << endl;
 
+    cout<<" typeid(size_t).name() = "<<typeid(size_t).name()<<endl;
+    cout<<" typeid(vector<int>::size_type).name() = "<<typeid(vector<int>::size_type).name()<<endl;
+
 }
 
 void PointerTest::testPointer() {

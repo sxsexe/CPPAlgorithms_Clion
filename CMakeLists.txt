@@ -3,5 +3,5 @@ project(cpp_Algorithm)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp fragments/Fragments.cpp fragments/Fragments.h CPPPrimer/StringTest.cpp CPPPrimer/StringTest.h CPPPrimer/ArrayTest.cpp CPPPrimer/ArrayTest.h fragments/Parent.h fragments/Child.cpp fragments/Child.h fragments/Parent.cpp CPPPrimer/Screen.cpp CPPPrimer/Screen.h CPPPrimer/CPPAlgorithmTest.cpp CPPPrimer/CPPAlgorithmTest.h CPPPrimer/PointerTest.cpp CPPPrimer/PointerTest.h CPPPrimer/StrBlob.cpp CPPPrimer/StrBlob.h)
+set(SOURCE_FILES main.cpp fragments/Fragments.cpp fragments/Fragments.h CPPPrimer/StringTest.cpp CPPPrimer/StringTest.h CPPPrimer/ArrayTest.cpp CPPPrimer/ArrayTest.h fragments/Parent.h fragments/Child.cpp fragments/Child.h fragments/Parent.cpp CPPPrimer/Screen.cpp CPPPrimer/Screen.h CPPPrimer/CPPAlgorithmTest.cpp CPPPrimer/CPPAlgorithmTest.h CPPPrimer/PointerTest.cpp CPPPrimer/PointerTest.h CPPPrimer/StrBlob.cpp CPPPrimer/StrBlob.h WordFinder/WordFinder.cpp WordFinder/WordFinder.h)
 add_executable(cpp_Algorithm ${SOURCE_FILES})
