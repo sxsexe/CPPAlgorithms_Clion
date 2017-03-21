@@ -3,6 +3,10 @@
 //
 
 #include "WordFinder.h"
+#include <fstream>
+#include <iostream>
+#include <istream>
+#include <sstream>
 
 
 using namespace std;
@@ -31,7 +35,40 @@ void WordFinder::releaseInstance() {
     }
 }
 
-bool WordFinder::beginProcess() {
+bool WordFinder::readFile(std::string &filePath) {
+    bool result = false;
+    string line;
+
+    fileContent.clear();
+
+    ifstream in(filePath);
+    if(in.is_open()) {
+        while(!in.eof()) {
+            getline(in, line);
+            fileContent.push_back(line);
+        }
+    }
+
+
+    return result;
+}
+
+void WordFinder::processEachLine(std::string &line, WordItem &item) {
+
+    if(line.empty()) {
+        return;
+    }
+
+
+
+}
+
+bool WordFinder::beginProcess(std::string& targetWord) {
+
+    if(targetWord.empty()) {
+        cout << "targetWord is empty!" << endl;
+        return false;
+    }
 
     if(filePath.empty()) {
         cout << "no file path, set file path first" << endl;
@@ -46,9 +83,35 @@ bool WordFinder::beginProcess() {
         }
     }
 
-    if(readFile()) {
+    if(readFile(this->filePath)) {
+        auto begin = fileContent.cbegin();
+        auto end = fileContent.cend();
+        while(begin != end) {
+
+            string line = *begin;
+            processEachLine(line, targetWord);
+        }
 
     }
 
 
 }
+
+
+void WordFinder::printOut() {
+
+    cout << "printOut results " << endl;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

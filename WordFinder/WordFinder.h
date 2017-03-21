@@ -32,7 +32,7 @@ public:
         this->filePath = filePath;
     }
 
-    bool beginProcess();
+    bool beginProcess(std::string& targetWord);
 
     void printOut();
 
@@ -53,6 +53,8 @@ private:
     std::vector<std::string> fileContent;
 
     bool readFile(std::string& filePath);
+
+    void processEachLine(std::string& line, WordItem & item);
 
 };
 
