@@ -39,6 +39,8 @@ public:
     static std::string& removeAllPunct(std::string &src);
     static void testRemoveAllPunct();
 
+    static void findSubString();
+
 
 };
 

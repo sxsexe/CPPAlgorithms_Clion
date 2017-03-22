@@ -8,6 +8,15 @@
 
 using namespace std;
 
+PointerTest::PointerTest() {
+    p0 = std::make_shared<Screen>();
+    cout << "new PointerTest over" << endl;
+}
+
+PointerTest::~PointerTest() {
+    cout << "~PointerTest" << endl;
+}
+
 
 void PointerTest::testStrBlob() {
 

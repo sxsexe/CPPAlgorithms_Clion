@@ -15,8 +15,12 @@ struct WordItem{
 
     std::string word;                   //要查找的单词
     std::size_t totalCount;             //总数量
-    std::set<std::size_t> lineSets;     //行号集合
-    std::map<std::size_t, std::size_t> eachLineCount;//每行的个数
+    std::set<int> lineSets;     //行号集合
+    std::map<int, int> eachLineCount;//每行的个数
+
+    void printOut() {
+        std::cout << word << " ("<<totalCount<< ")" << std::endl;
+    }
 };
 
 
@@ -54,7 +58,13 @@ private:
 
     bool readFile(std::string& filePath);
 
-    void processEachLine(std::string& line, WordItem & item);
+    /**
+     * 处理每一行的string
+     * @param line
+     * @param item
+     * @return true: find到
+     */
+    bool processEachLine(int lineNum, std::string& line, WordItem & item);
 
 };
 

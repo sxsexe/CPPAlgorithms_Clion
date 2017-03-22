@@ -136,3 +136,20 @@ void StringTest::testRemoveAllPunct() {
     removeAllPunct(src);
 
 }
+
+void StringTest::findSubString() {
+
+    string src = "CONFIDENCE_LEVEL_DEFAULT_USER=";
+    int first = src.find_first_of("=");
+    string substr = src.substr(first + 1);
+    cout << substr << endl;
+    try {
+        int num = stoi(substr);
+        cout << "number="<< num << endl;
+    } catch (std::invalid_argument e) {
+        cout << "invalid_argument"  << endl;
+    }
+
+
+
+}

@@ -15,11 +15,16 @@ class PointerTest {
 
 public:
 
+    PointerTest();
+    ~PointerTest();
+
     static void testPointer();
 
     static void testStrBlob();
 
 private:
+
+    std::shared_ptr<Screen> p0;
 
     static std::shared_ptr<Screen> factroy_ptr() {
         std::shared_ptr<Screen> p1 = std::make_shared<Screen>();

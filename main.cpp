@@ -7,6 +7,11 @@
 #include "CPPPrimer/CPPAlgorithmTest.h"
 #include "CPPPrimer/PointerTest.h"
 
+#include <thread>         // std::thread, std::thread::id, std::this_thread::get_id
+#include <chrono>         // std::chrono::seconds
+
+#include "WordFinder/WordFinder.h"
+
 
 //std::string sa[10];
 //int ia[10];
@@ -41,8 +46,22 @@ int main() {
 //    CPPAlgorithmTest::testAccumulate();
 
 //    PointerTest::testPointer();
-    PointerTest::testStrBlob();
+//    PointerTest::testStrBlob();
 
-//    std::cout << "Hello, World!" << std::endl;
+//    PointerTest *p =new PointerTest();
+//    delete p;
+
+//    std::this_thread::sleep_for(std::chrono::seconds{10});
+
+
+//    PointerTest *p =new PointerTest();
+//    delete p;
+
+//    StringTest::findSubString();
+
+    WordFinder::getInstance()->test();
+    WordFinder::getInstance()->releaseInstance();
+
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
