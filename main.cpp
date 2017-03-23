@@ -12,6 +12,8 @@
 
 #include "WordFinder/WordFinder.h"
 
+#include "XDown/XDown.h"
+
 
 //std::string sa[10];
 //int ia[10];
@@ -59,8 +61,10 @@ int main() {
 
 //    StringTest::findSubString();
 
-    WordFinder::getInstance()->test();
-    WordFinder::getInstance()->releaseInstance();
+//    WordFinder::getInstance()->test();
+//    WordFinder::getInstance()->releaseInstance();
+
+    XDown::test();
 
     std::cout << "Hello, World!" << std::endl;
     return 0;

@@ -3,5 +3,14 @@ project(cpp_Algorithm)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp fragments/Fragments.cpp fragments/Fragments.h CPPPrimer/StringTest.cpp CPPPrimer/StringTest.h CPPPrimer/ArrayTest.cpp CPPPrimer/ArrayTest.h fragments/Parent.h fragments/Child.cpp fragments/Child.h fragments/Parent.cpp CPPPrimer/Screen.cpp CPPPrimer/Screen.h CPPPrimer/CPPAlgorithmTest.cpp CPPPrimer/CPPAlgorithmTest.h CPPPrimer/PointerTest.cpp CPPPrimer/PointerTest.h CPPPrimer/StrBlob.cpp CPPPrimer/StrBlob.h WordFinder/WordFinder.cpp WordFinder/WordFinder.h Util/TimeUtil.cpp Util/TimeUtil.h)
+
+INCLUDE_DIRECTORIES("${CMAKE_SOURCE_DIR}/Util/")
+
+LINK_DIRECTORIES(${CMAKE_SOURCE_DIR}/libs)
+
+MESSAGE("${LIBCURL}")
+MESSAGE("${CMAKE_SOURCE_DIR}")
+
+set(SOURCE_FILES main.cpp fragments/Fragments.cpp fragments/Fragments.h CPPPrimer/StringTest.cpp CPPPrimer/StringTest.h CPPPrimer/ArrayTest.cpp CPPPrimer/ArrayTest.h fragments/Parent.h fragments/Child.cpp fragments/Child.h fragments/Parent.cpp CPPPrimer/Screen.cpp CPPPrimer/Screen.h CPPPrimer/CPPAlgorithmTest.cpp CPPPrimer/CPPAlgorithmTest.h CPPPrimer/PointerTest.cpp CPPPrimer/PointerTest.h CPPPrimer/StrBlob.cpp CPPPrimer/StrBlob.h WordFinder/WordFinder.cpp WordFinder/WordFinder.h Util/TimeUtil.cpp Util/TimeUtil.h XDown/XDown.cpp XDown/XDown.h)
 add_executable(cpp_Algorithm ${SOURCE_FILES})
+TARGET_LINK_LIBRARIES(cpp_Algorithm curl_mac)

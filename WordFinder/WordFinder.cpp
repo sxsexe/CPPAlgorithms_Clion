@@ -10,7 +10,7 @@
 #include <string>
 #include <cctype>
 
-#include "../Util/TimeUtil.h"
+#include "TimeUtil.h"
 
 
 using namespace std;
@@ -167,6 +167,7 @@ bool WordFinder::processEachLine(int lineNum, std::string &line, WordItem &item)
         item.totalCount += count;
         return true;
     }
+    return false;
 
 }
 
@@ -205,8 +206,10 @@ bool WordFinder::beginProcess(std::string& targetWord, bool entireWord) {
 
             lineNum++;
         }
+        return true;
     } else {
         cout << " read file failed" << endl;
+        return false;
     }
 
 }
