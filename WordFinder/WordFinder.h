@@ -50,7 +50,13 @@ public:
         this->filePath = filePath;
     }
 
-    bool beginProcess(std::string& targetWord);
+    /**
+     *
+     * @param targetWord 要寻找的单词
+     * @param entireWord 是否整个单词匹配
+     * @return
+     */
+    bool beginProcess(std::string& targetWord, bool entireWord);
 
     void printOut();
 
@@ -69,6 +75,8 @@ private:
     WordItem *wordItem = nullptr;
 
     std::vector<std::string> fileContent;
+
+    bool mEntireWord;
 
     bool readFile(std::string& filePath);
 

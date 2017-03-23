@@ -8,6 +8,9 @@
 #include <istream>
 #include <sstream>
 #include <string>
+#include <cctype>
+
+#include "../Util/TimeUtil.h"
 
 
 using namespace std;
@@ -51,14 +54,15 @@ bool WordFinder::readFile(std::string &filePath) {
             fileContent.push_back(line);
         }
         result = true;
+        in.close();
     }
-
 
     return result;
 }
 
 bool WordFinder::processEachLine(int lineNum, std::string &line, WordItem &item) {
 
+    /* 效果不好，对某些特殊字符没办法区分，比如target\r
     if(line.empty()) {
         return false;
     }
@@ -102,9 +106,71 @@ bool WordFinder::processEachLine(int lineNum, std::string &line, WordItem &item)
         return true;
     }
     return false;
+     */
+
+    if(line.empty()) {
+        return false;
+    }
+    std::string target = item.word;
+    int count = 0;//每行的个数
+    int lineLength = line.length();
+    int targetWordLength = target.length();
+
+    int index = 0;
+    std::string::size_type pos = line.find(target, index);
+    while(index < lineLength) {
+        if(pos == std::string::npos) {
+            break;
+        } else {
+            if(this->mEntireWord) {
+                bool flagFront = false;
+                bool flagEnd = false;
+                //检查找到的target后边一个字符是否是字母
+                int tmpIndex = pos + targetWordLength;
+                if(tmpIndex < lineLength) {
+                    char c1 = line[tmpIndex];
+                    if(isalnum(c1)) {
+                        //如果后边的字符是数字或字母,则不是单词
+                    } else {
+                        flagEnd = true;
+                    }
+                } else {
+                    flagEnd = true;
+                }
+                //检查找到的target前边一个字符是否是字母
+                tmpIndex = pos - 1;
+                if(tmpIndex >= 0) {
+                    char c1 = line[tmpIndex];
+                    if(isalnum(c1)) {
+                        //如果前边的字符是数字或字母,则不是单词
+                    } else {
+                        flagFront = true;
+                    }
+                } else {
+                    flagFront = true;
+                }
+                if(flagEnd && flagFront) {
+                    count++;
+                }
+                index = pos + targetWordLength;
+            } else {
+                count++;
+                index = pos + targetWordLength;
+            }
+            pos = line.find(target, index);
+        }
+    }
+
+    if(count > 0) {
+        item.lineSets.insert(lineNum);
+        item.eachLineCount.insert({lineNum, count});
+        item.totalCount += count;
+        return true;
+    }
+
 }
 
-bool WordFinder::beginProcess(std::string& targetWord) {
+bool WordFinder::beginProcess(std::string& targetWord, bool entireWord) {
 
     if(targetWord.empty()) {
         cout << "targetWord is empty!" << endl;
@@ -124,16 +190,23 @@ bool WordFinder::beginProcess(std::string& targetWord) {
         }
     }
     wordItem->word = targetWord;
+    this->mEntireWord = entireWord;
+
 
     if(readFile(this->filePath)) {
         auto begin = fileContent.cbegin();
         auto end = fileContent.cend();
-        int lineNum = 0;
+        int lineNum = 1;
         while(begin != end) {
             string line = *begin++;
-            processEachLine(lineNum, line, *wordItem);
+            if(processEachLine(lineNum, line, *wordItem)) {
+//                cout << lineNum << "::" << line << endl;
+            }
+
             lineNum++;
         }
+    } else {
+        cout << " read file failed" << endl;
     }
 
 }
@@ -150,13 +223,20 @@ void WordFinder::printOut() {
 
 
 void WordFinder::test() {
-    std::string filePath("/Users/lxd/log/xx");
+
+    long start = TimeUtil::currentTimeMillis();
+//    std::string filePath("/Users/lxd/log/xx");
+    std::string filePath("/Users/lxd/log/1618.txt");
     WordFinder::getInstance()->setFilePath(filePath);
 
-    std::string targetWord("SEED");
-    WordFinder::getInstance()->beginProcess(targetWord);
+//    std::string targetWord("SEED");
+    std::string targetWord("service");
+    WordFinder::getInstance()->beginProcess(targetWord, true);
 
     WordFinder::getInstance()->printOut();
+
+    long end = TimeUtil::currentTimeMillis();
+    cout << "Took " << (end - start) << "ms" << endl;
 
 }
 
