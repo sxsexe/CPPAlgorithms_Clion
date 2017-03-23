@@ -62,38 +62,43 @@ bool WordFinder::processEachLine(int lineNum, std::string &line, WordItem &item)
     if(line.empty()) {
         return false;
     }
-    std::string target = item.word;
-    int lineCount = 0;//每行的个数
+    std::string target;
+    int count = 0;//每行的个数
+    int lineLength = line.length();
 
     //查找开头，target+" "
-    target = target+" ";
+    target = item.word + " ";
     std::string::size_type pos = line.find(target, 0);
-    if(pos != std::string::npos) {
-        lineCount++;
-    } else {
-        //向后查找 " " + target + " "
-        target = " " + target + " ";
-        int length = line.length();
-        int targetWordLength = target.length();
-        while((pos + targetWordLength) < length) {
-            pos = line.find(target, pos);
-            if(pos != std::string::npos) {
-                lineCount++;
-            }
-            pos += targetWordLength;
-        }
-    }
-    //查找末尾 " "+target
-    target = " " + target;
-    pos = line.rfind(target);
-    if(pos != std::string::npos) {
-        lineCount++;
+    if(pos == 0) {//只有找到的位于位置0才认为成功
+        count++;
     }
 
-    if(lineCount > 0) {
+    //向后查找 " " + target + " "
+    target = " " + item.word  + " ";
+    int targetWordLength = target.length();
+    int index = 0;
+    while(index < lineLength) {
+        pos = line.find(target, index);
+        if(pos == std::string::npos) {
+            break;
+        } else {
+            count++;
+            index = pos + targetWordLength - 1;
+        }
+    }
+
+    //查找末尾 " "+target
+    target = " " + item.word ;
+    pos = line.rfind(target);
+    targetWordLength = target.length();
+    if(lineLength == (pos + targetWordLength)) { //只有最后一个位置才认为是正确的
+        count++;
+    }
+
+    if(count > 0) {
         item.lineSets.insert(lineNum);
-        item.eachLineCount.insert({lineNum, lineCount});
-        item.totalCount += lineCount;
+        item.eachLineCount.insert({lineNum, count});
+        item.totalCount += count;
         return true;
     }
     return false;
@@ -125,7 +130,7 @@ bool WordFinder::beginProcess(std::string& targetWord) {
         auto end = fileContent.cend();
         int lineNum = 0;
         while(begin != end) {
-            string line = *begin;
+            string line = *begin++;
             processEachLine(lineNum, line, *wordItem);
             lineNum++;
         }
@@ -150,6 +155,8 @@ void WordFinder::test() {
 
     std::string targetWord("SEED");
     WordFinder::getInstance()->beginProcess(targetWord);
+
+    WordFinder::getInstance()->printOut();
 
 }
 

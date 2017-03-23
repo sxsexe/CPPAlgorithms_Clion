@@ -11,6 +11,8 @@
 #include <set>
 #include <map>
 
+using namespace std;
+
 struct WordItem{
 
     std::string word;                   //要查找的单词
@@ -19,7 +21,19 @@ struct WordItem{
     std::map<int, int> eachLineCount;//每行的个数
 
     void printOut() {
-        std::cout << word << " ("<<totalCount<< ")" << std::endl;
+        std::cout << word << ", totalCount=("<<totalCount<< "): " << std::endl;
+        auto lineBegin = lineSets.cbegin();
+        auto lineEnd = lineSets.cend();
+        while(lineBegin != lineEnd) {
+            auto key = *lineBegin;
+            auto count = eachLineCount.find(key)->second;
+            cout << "Line(" << key << "), Count=" << count << endl;
+            lineBegin++;
+        }
+    }
+
+    ~WordItem() {
+        cout << "~WordItem" << endl;
     }
 };
 
