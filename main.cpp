@@ -14,6 +14,8 @@
 
 #include "XDown/XDown.h"
 
+#include "CPPPrimer/ClassTestDemo.h"
+
 
 //std::string sa[10];
 //int ia[10];
@@ -64,7 +66,10 @@ int main() {
 //    WordFinder::getInstance()->test();
 //    WordFinder::getInstance()->releaseInstance();
 
-    XDown::test();
+//    XDown::test();
+
+    Point global;
+    ClassTestDemo::test(global);
 
     std::cout << "Hello, World!" << std::endl;
     return 0;
