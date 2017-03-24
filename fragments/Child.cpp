@@ -10,6 +10,7 @@ using namespace std;
 static Child * sIntance = nullptr;
 Child::Child() {
     cout << "new Child" << endl;
+    this->name = "Child";
 }
 
 Child::Child(int num) {
@@ -20,10 +21,13 @@ Child::~Child() {
     cout << "~Child" << endl;
 }
 
-void Child::releas() {
+void Child::release() {
     this->a = 200;
-    cout << "Child releas a=" << &a << endl;
-    Parent::releas();//显式调用父类的方法，相当于super.xxx()
+    cout << "Child release a=" << a << endl;
+    cout << "Child release name=" << this->name << endl;
+    Parent::release();//显式调用父类的方法，相当于super.xxx()
+    cout << "Parent release name=" << Parent::name << endl;
+    cout << "Parent release a=" << Parent::a << endl;
     delete sIntance;
     sIntance = nullptr;
 }

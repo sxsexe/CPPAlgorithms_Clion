@@ -5,6 +5,8 @@
 #ifndef CPP_ALGORITHM_PARENT_H
 #define CPP_ALGORITHM_PARENT_H
 
+#include <iostream>
+#include <string>
 
 class Parent {
 
@@ -12,9 +14,16 @@ public:
     Parent();
     virtual ~Parent();
 
-    virtual void releas();
+    virtual void release();
 
     int a = 100;
+
+private:
+    double price = 1.0;
+
+protected:
+
+    std::string name = std::string("Parent");
 
 };
 

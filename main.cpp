@@ -15,6 +15,7 @@
 #include "XDown/XDown.h"
 
 #include "CPPPrimer/ClassTestDemo.h"
+#include "CPPPrimer/HasPtr.h"
 
 
 //std::string sa[10];
@@ -68,8 +69,12 @@ int main() {
 
 //    XDown::test();
 
-    Point global;
-    ClassTestDemo::test(global);
+//    Point global;
+//    ClassTestDemo::test(global);
+
+//    HasPtr::test();
+
+    ClassTestDemo::testParentChild();
 
     std::cout << "Hello, World!" << std::endl;
     return 0;

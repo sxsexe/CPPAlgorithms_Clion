@@ -6,6 +6,8 @@
 #define CPP_ALGORITHM_CLASSTESTDEMO_H
 
 #include "Point.h"
+#include "../fragments/Parent.h"
+#include "../fragments/Child.h"
 
 class ClassTestDemo {
 
@@ -29,6 +31,13 @@ public:
 
         //返回实参对象，引发一次拷贝构造
         return *heap;
+    }
+
+    static void testParentChild() {
+
+        Parent * p = new Child();
+        //p->net_price(2);
+        p->release();
     }
 
 };

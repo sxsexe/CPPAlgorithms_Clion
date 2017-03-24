@@ -22,7 +22,7 @@ public:
 
     ~Child();
 
-    void releas() override ;
+    void release() override ;
 
 };
 

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 //
 // Created by lxd on 17/3/7.
 //
@@ -22,6 +16,6 @@ Parent::~Parent() {
     cout << "~ Parent" << endl;
 }
 
-void Parent::releas() {
+void Parent::release() {
     cout << "Parent release a=" << &a << endl;
 }

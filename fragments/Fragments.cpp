@@ -192,7 +192,7 @@ void Fragments::testChangeLength1D() {
 void Fragments::testIntance() {
 
     Parent* p = Child::getInstance();
-    p->releas();
+    p->release();
 
     //如果Child(int num)声明为explicit的，以下代码不会隐式转换，会报错
     //no viable conversion from 'int' to 'Child'
