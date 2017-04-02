@@ -9,6 +9,7 @@
 #include <vector>
 #include "LineIntent.h"
 #include "CardData.h"
+#include "Score.h"
 
 #define  COLUMN_MAX 4
 #define  ROW_MAX    4
@@ -29,7 +30,7 @@ public:
 
     Core2048() = default;
 
-    ~Core2048() = default;
+    ~Core2048();
 
 
     void initData();
@@ -53,6 +54,9 @@ private:
     ActionDirection mDirection = ACTION_NULL;
 
     bool mIsProcessing = false;
+
+    int loopCount = 0;
+    Score score;
 
     /**
      * vector{0, 1...}
@@ -105,6 +109,17 @@ private:
      * @param count LOOP
      */
     void generateRandom(int count);
+
+    bool checkIfEmptySpace() {
+        for (int i = 0; i < ROW_MAX; i++) {
+            for (int k = 0; k < COLUMN_MAX; k++) {
+                if (mOriginData[i][k]->mValue == 0) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
 
 };

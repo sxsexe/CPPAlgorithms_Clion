@@ -6,6 +6,15 @@
 
 using namespace std;
 
+Core2048::~Core2048() {
+    for (int i = 0; i < ROW_MAX; i++) {
+        for (int k = 0; k < COLUMN_MAX; k++) {
+            delete mOriginData[i][k];
+        }
+        delete [] mOriginData[i];
+    }
+}
+
 void Core2048::handleInputEvent(ActionDirection direction) {
     if (this->mIsProcessing) {
         cout << "Processing" << endl;
@@ -16,6 +25,18 @@ void Core2048::handleInputEvent(ActionDirection direction) {
     this->beginProcess();
 
     this->endProcess();
+
+    ++loopCount;
+    cout << "Your current score is " << score.currentScroe() << ", current step is " << loopCount << endl;
+
+    if (checkIfEmptySpace()) {
+        this->generateRandom(1);
+        cout << "New Loop , New data : " << endl;
+        this->dumpResult();
+    } else {
+        cout << "No Empty Space Found, Game is Over!!! " << endl;
+        cout << "Your score is " << score.currentScroe() << ", total step is " << loopCount << endl;
+    }
 }
 
 void Core2048::beginProcess() {
@@ -71,7 +92,7 @@ void Core2048::handleActionRight() {
     std::vector<CardData *> line;
     for (int i = 0; i < ROW_MAX; i++) {
         line.clear();
-        for (int k = (COLUMN_MAX - 1); k >=0; k--) {
+        for (int k = (COLUMN_MAX - 1); k >= 0; k--) {
             //将这一条线上的数据放到vector中
             line.push_back(mOriginData[i][k]);
         }
@@ -102,6 +123,37 @@ void Core2048::processEachLine(std::vector<CardData *> &line) {
         CardData *cardData = *itBegin++;
         cardData->dumpCard();
     }
+
+    itBegin = line.begin();
+    auto tmpIndex = itBegin;
+    while (itBegin != itEnd) {
+        //依次往上移动，保证前边没有0
+        CardData *cardData = *itBegin;
+        if (cardData->isEmpty()) {
+            ++itBegin;
+        } else {
+            if (tmpIndex != itBegin) {
+                if ((*tmpIndex)->mValue == 0) {
+                    (*tmpIndex)->mValue += (*itBegin)->mValue;
+                    (*itBegin)->mValue = 0;
+                } else if ((*tmpIndex)->mValue == (*itBegin)->mValue) {
+                    (*tmpIndex)->mValue += (*itBegin)->mValue;
+                    score.score((*tmpIndex)->mValue);
+                    (*itBegin)->mValue = 0;
+                    ++tmpIndex;
+                } else {
+                    (*++tmpIndex)->mValue = (*itBegin)->mValue;
+                    if (tmpIndex != itBegin) {
+                        (*itBegin)->mValue = 0;
+                    }
+                }
+            }
+            ++itBegin;
+        }
+    }
+
+    this->dumpResult();
+
     cout << "processEachLine [end]" << endl;
 
 }
@@ -117,6 +169,17 @@ void Core2048::initData() {
     }
 
     this->generateRandom(INIT_GEN_COUNT);
+
+#if 1
+//    mOriginData[0][0]->mValue = 0;
+//    mOriginData[0][1]->mValue = 2;
+//    mOriginData[0][2]->mValue = 2;
+//    mOriginData[0][3]->mValue = 0;
+
+
+#endif
+
+
     this->dumpResult();
 
 }
@@ -135,7 +198,7 @@ void Core2048::generateRandom(int count) {
         int value = this->generateRandomValue();
 
         CardData *cardData = indexes[findResult];
-        if(cardData->mValue != 0) {
+        if (cardData->mValue != 0) {
             cout << "Error, CardData is not Empty " << endl;
         }
         cardData->mValue = value;
@@ -170,7 +233,6 @@ int Core2048::generateRandomIndex(std::vector<CardData *> indexes) {
 }
 
 int Core2048::generateRandomValue() {
-
 
     int seeds[2] = {2, 4};
     return seeds[rand() % 2];

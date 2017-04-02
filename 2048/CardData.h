@@ -36,6 +36,10 @@ public:
         mUniqueName = str1 + "_" + str2;
     }
 
+    bool isEmpty() {
+        return mValue == 0;
+    }
+
     void dumpCard() {
         std::cout << "Card, i=" << mRowIndex << ",j="<<mColumnIndex<<",value="<<mValue<<std::endl;
     }
