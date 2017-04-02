@@ -15,17 +15,20 @@
 
 #define  MAX_COUNT (COLUMN_MAX) * (ROW_MAX)
 
-#define  INIT_GEN_COUNT 2
+#define  INIT_GEN_COUNT 10
 
 #define DEBUG ON
 
-typedef enum{ACTION_UP, ACTION_DOWN, ACTION_LEFT, ACTION_RIGHT} ActionDirection;
+typedef enum {
+    ACTION_NULL, ACTION_UP, ACTION_DOWN, ACTION_LEFT, ACTION_RIGHT
+} ActionDirection;
 
 class Core2048 {
 
 public:
 
     Core2048() = default;
+
     ~Core2048() = default;
 
 
@@ -43,15 +46,39 @@ public:
 private:
 
     //original data
-    CardData* mOriginData[ROW_MAX][COLUMN_MAX];
+    CardData *mOriginData[ROW_MAX][COLUMN_MAX];
 
     std::vector<LineIntent> lineIntents;
 
-    ActionDirection mDirection;
+    ActionDirection mDirection = ACTION_NULL;
 
     bool mIsProcessing = false;
 
-    void processEachLine();
+    /**
+     * vector{0, 1...}
+     */
+    void handleActionUp();
+
+    /**
+     * vector{MAX, MAX-1...}
+     */
+    void handleActionDown();
+
+    /**
+     * vector{MAX, MAX-1...}
+     */
+    void handleActionRight();
+
+    /**
+     * vector{0, 1...}
+     */
+    void handleActionLeft();
+
+    /**
+     *
+     * @param line 不论哪个方向，都搞成一个vector且顺序按照各个方向处理
+     */
+    void processEachLine(std::vector<CardData *> &line);
 
 
     /**
@@ -65,21 +92,19 @@ private:
      * 查找所有的空位置
      * @param emptyIndexs
      */
-    void findAllEmptyPosition(std::vector<CardData *>& emptyIndexs);
+    void findAllEmptyPosition(std::vector<CardData *> &emptyIndexs);
 
     /**
      * 生成一个随即的值，2或者4
      * @return
      */
-    int generateRandowmValue();
+    int generateRandomValue();
 
     /**
      * 查找随即空位置 并生成随即值
      * @param count LOOP
      */
     void generateRandom(int count);
-
-
 
 
 };

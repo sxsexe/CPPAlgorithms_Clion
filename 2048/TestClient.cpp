@@ -40,7 +40,7 @@ void TestClient::test(int argc, char **argv) {
                     core2048.handleInputEvent(ACTION_LEFT);
                     break;
                 case 'd' :
-                    core2048.handleInputEvent(ACTION_DOWN);
+                    core2048.handleInputEvent(ACTION_RIGHT);
                     break;
                 case 'q':
                     printf("Bye Bye");
