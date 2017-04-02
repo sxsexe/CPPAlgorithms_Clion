@@ -17,6 +17,7 @@
 #define  MAX_COUNT (COLUMN_MAX) * (ROW_MAX)
 
 #define  INIT_GEN_COUNT 10
+#define  STACK_COUNT 10
 
 #define DEBUG ON
 
@@ -43,6 +44,8 @@ public:
 
     void endProcess();
 
+    void quit();
+
 
 private:
 
@@ -55,8 +58,10 @@ private:
 
     bool mIsProcessing = false;
 
-    int loopCount = 0;
+    int mStepCount = 0;
     Score score;
+    int mStack[STACK_COUNT][ROW_MAX][COLUMN_MAX];
+    int mStackIndex = -1;
 
     /**
      * vector{0, 1...}

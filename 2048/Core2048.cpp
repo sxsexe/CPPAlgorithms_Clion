@@ -26,8 +26,8 @@ void Core2048::handleInputEvent(ActionDirection direction) {
 
     this->endProcess();
 
-    ++loopCount;
-    cout << "Your current score is " << score.currentScroe() << ", current step is " << loopCount << endl;
+    ++mStepCount;
+    cout << "Your current score is " << score.currentScroe() << ", current step is " << mStepCount << endl;
 
     if (checkIfEmptySpace()) {
         this->generateRandom(1);
@@ -35,7 +35,7 @@ void Core2048::handleInputEvent(ActionDirection direction) {
         this->dumpResult();
     } else {
         cout << "No Empty Space Found, Game is Over!!! " << endl;
-        cout << "Your score is " << score.currentScroe() << ", total step is " << loopCount << endl;
+        cout << "Your score is " << score.currentScroe() << ", total step is " << mStepCount << endl;
     }
 }
 
@@ -62,6 +62,11 @@ void Core2048::beginProcess() {
 
 void Core2048::endProcess() {
     this->mIsProcessing = false;
+}
+
+
+void Core2048::quit() {
+    cout << "QUIT! Your current score is " << score.currentScroe() << ", current step is " << mStepCount << endl;
 }
 
 void Core2048::handleActionUp() {
@@ -116,13 +121,13 @@ void Core2048::handleActionLeft() {
 void Core2048::processEachLine(std::vector<CardData *> &line) {
     // 先找到第一个不是0的位置，然后继续找后边的value，如果后边找到非0且与前边的相同则加到前边，
     // 否则置于其后
-    cout << "processEachLine [begin]" << endl;
+//    cout << "processEachLine [begin]" << endl;
     auto itBegin = line.begin();
     auto itEnd = line.end();
-    while (itBegin != itEnd) {
-        CardData *cardData = *itBegin++;
-        cardData->dumpCard();
-    }
+//    while (itBegin != itEnd) {
+//        CardData *cardData = *itBegin++;
+//        cardData->dumpCard();
+//    }
 
     itBegin = line.begin();
     auto tmpIndex = itBegin;
@@ -152,9 +157,9 @@ void Core2048::processEachLine(std::vector<CardData *> &line) {
         }
     }
 
-    this->dumpResult();
+//    this->dumpResult();
 
-    cout << "processEachLine [end]" << endl;
+//    cout << "processEachLine [end]" << endl;
 
 }
 

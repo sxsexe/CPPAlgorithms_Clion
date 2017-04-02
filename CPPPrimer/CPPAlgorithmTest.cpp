@@ -8,6 +8,7 @@
 #include <sstream>
 #include <numeric>
 #include <stdlib.h>
+#include <stdexcept>
 
 
 using namespace std;

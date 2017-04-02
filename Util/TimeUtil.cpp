@@ -3,6 +3,7 @@
 //
 
 #include "TimeUtil.h"
+#include <cstdlib>
 
 long TimeUtil::currentTimeMillis() {
 

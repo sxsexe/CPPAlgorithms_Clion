@@ -13,8 +13,12 @@ using namespace std;
 void TestClient::test(int argc, char **argv) {
 
 
-    printf("Useage,\tinput i to initiliaze game,\n\tinput w to move up,\n \tinput s to move down,"
-                   "\n \tintpu a to move left,\n \tinput d to move right\n");
+    printf("Useage,\tinput i to initiliaze game,\n"
+                   "\tinput w to move up,\n "
+                   "\tinput s to move down,\n"
+                   "\tintpu a to move left,\n "
+                   "\tinput d to move right\n"
+                   "\tinput q to quit\n");
 
     Core2048 core2048;
 
@@ -44,7 +48,8 @@ void TestClient::test(int argc, char **argv) {
                     break;
                 case 'q':
                     printf("Bye Bye");
-                    break;
+                    core2048.quit();
+                    return;
                 default:
                     printf("Wrong Usage\n");
                     break;
