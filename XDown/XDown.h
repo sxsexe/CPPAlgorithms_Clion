@@ -5,7 +5,7 @@
 #ifndef CPP_ALGORITHM_XDOWN_H
 #define CPP_ALGORITHM_XDOWN_H
 
-#include <curl/curl.h>
+//#include <curl/curl.h>
 
 
 class XDown {

@@ -9,7 +9,7 @@ using namespace std;
 
 void LineIntent::add(CardData *src, CardData *dest) {
 
-    mMovePair.insert(src, dest);
+//    mMovePair.insert(*src, dest);
 
 }
 

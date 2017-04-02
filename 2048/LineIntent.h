@@ -24,7 +24,7 @@ public:
 
 private:
 
-    std::map<CardData*, CardData*> mMovePair;
+    std::map<CardData, CardData*> mMovePair;
 
 };
 

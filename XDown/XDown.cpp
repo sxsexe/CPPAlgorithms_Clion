@@ -12,6 +12,6 @@ using namespace std;
 
 void XDown::test() {
 
-    cout << curl_version() << endl;
+//    cout << curl_version() << endl;
 
 }

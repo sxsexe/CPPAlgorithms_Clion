@@ -14,6 +14,7 @@ class CardData {
 
 public:
 
+    CardData(int rowIndex, int columnIndex) : mValue(0), mRowIndex(rowIndex), mColumnIndex(columnIndex){}
     CardData():mValue(0), mRowIndex(-1), mColumnIndex(-1){}
     ~CardData(){};
 

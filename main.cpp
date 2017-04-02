@@ -17,12 +17,14 @@
 #include "CPPPrimer/ClassTestDemo.h"
 #include "CPPPrimer/HasPtr.h"
 
+#include "2048/TestClient.h"
+
 
 //std::string sa[10];
 //int ia[10];
 using namespace std;
 
-int main() {
+int main(int argc, char*argv[]) {
 
 //    Fragments::test2DArray();
 //
@@ -74,7 +76,10 @@ int main() {
 
 //    HasPtr::test();
 
-    ClassTestDemo::testParentChild();
+//    ClassTestDemo::testParentChild();
+
+    TestClient client;
+    client.test(argc, argv);
 
     std::cout << "Hello, World!" << std::endl;
     return 0;
