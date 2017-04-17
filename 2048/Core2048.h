@@ -10,6 +10,7 @@
 #include "LineIntent.h"
 #include "CardData.h"
 #include "Score.h"
+#include "Log.h"
 
 #define  COLUMN_MAX 4
 #define  ROW_MAX    4

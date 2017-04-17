@@ -11,8 +11,9 @@ Core2048::~Core2048() {
         for (int k = 0; k < COLUMN_MAX; k++) {
             delete mOriginData[i][k];
         }
-        delete [] mOriginData[i];
+        // delete [] mOriginData[i];
     }
+//  delete mOriginData;
 }
 
 void Core2048::handleInputEvent(ActionDirection direction) {
@@ -27,16 +28,18 @@ void Core2048::handleInputEvent(ActionDirection direction) {
     this->endProcess();
 
     ++mStepCount;
-    cout << "Your current score is " << score.currentScroe() << ", current step is " << mStepCount << endl;
+
+    LOG_INFO("Your current score is %ld, current step is %d" ,score.currentScroe(),mStepCount);
+//    cout << "Your current score is " << score.currentScroe() << ", current step is " << mStepCount << endl;
 
     if (checkIfEmptySpace()) {
         this->generateRandom(1);
-        cout << "New Loop , New data : " << endl;
+        LOG_INFO("New Loop , New data : ");
         this->dumpResult();
     } else {
-        cout << "No Empty Space Found, Game is Over!!! " << endl;
-        cout << "Your score is " << score.currentScroe() << ", total step is " << mStepCount << endl;
+        LOG_INFO("Your score is %ld, total step is %d ", score.currentScroe(), mStepCount);
     }
+
 }
 
 void Core2048::beginProcess() {
@@ -55,7 +58,7 @@ void Core2048::beginProcess() {
             this->handleActionRight();
             break;
         default:
-            cout << "should never run here" << endl;
+            LOG_ERROR("should never run here ");
             break;
     }
 }
@@ -66,7 +69,7 @@ void Core2048::endProcess() {
 
 
 void Core2048::quit() {
-    cout << "QUIT! Your current score is " << score.currentScroe() << ", current step is " << mStepCount << endl;
+    LOG_INFO("QUIT! Your current score is %ld, current step is %d", score.currentScroe(), mStepCount);
 }
 
 void Core2048::handleActionUp() {
@@ -183,7 +186,6 @@ void Core2048::initData() {
 
 
 #endif
-
 
     this->dumpResult();
 
